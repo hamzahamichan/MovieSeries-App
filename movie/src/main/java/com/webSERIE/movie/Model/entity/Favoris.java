@@ -14,7 +14,7 @@ public class Favoris {
         private Long id;
 
         @ManyToOne
-        @JoinColumn(name = "user_id", nullable = false)
+        @JoinColumn(name = "id_user", nullable = false)
         private User user;
 
         @ManyToOne
@@ -22,7 +22,7 @@ public class Favoris {
         private Film film;
 
         @ManyToOne
-        @JoinColumn(name = "serie_id")
+        @JoinColumn(name = "id_serie")
         private Serie serie;
 
 }
