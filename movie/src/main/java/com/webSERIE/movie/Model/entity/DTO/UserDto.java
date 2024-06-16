@@ -12,13 +12,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDto {
-    private Long id_user;
+    private int userid;
     private String username;
     private String email;
     private String password;
     public static UserDto tDto(User user){
         return UserDto.builder()
-                .id_user(user.getId_user())
+                .userid(user.getUserid())
                 .username(user.getUsername())
                 .email(user.getEmail())
                 .password(user.getPassword())
